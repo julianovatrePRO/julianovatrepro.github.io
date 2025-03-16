@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* CONFIGURAÇÕES DE ATALHOS */
+:root {
+    --font: 'Ubuntu', sans-serif;
+    --cor0: #D6D6D6;
+    --cor1: #202020;
+    --cor2: #333533;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONFIGURAÇÕES DO CORPO */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor2);
+}
+
+/* CONFIGURAÇÕES DO CABEÇALHO */
+header {
+    background-color: var(--cor1);
+    font-family: var(--font);
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--cor0);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px var(--cor1);
+}
+
+/* CONFIGURAÇÕES DO CONTEÚDO INICIAL */
+section {
+    width: 600px;
+    margin: auto;
+}
+
+main {
+    font-family: var(--font);
+    text-align: center;
+}
+
+.perfil img {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--cor1);
+}
+
+.social>a>img {
+    margin: 20px 10px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+main h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: var(--cor0);
+    margin-top: 50px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+article p {
+    font-size: 1.3em;
+    color: var(--cor0);
+    margin: 30px 50px 0px 50px;
+    text-indent: 1.3em;
+    text-align: center;
+}
+
+/* CONGIFURAÇÕES DAS SKILLS */
+.skills>img {
+    margin: 0px 10px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+
+/* CONFIGURAÇÕES DO CONTEÚDO PROJETOS */
+#background {
+    margin: 10px;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    filter: blur(0px);
+}
+
+#background:hover {
+    filter: blur(2px);
+    transition: 0.2s;
+}
+
+.projects {
+    display: inline-block;
+    position: relative;
+}
+
+.projects figcaption {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--cor1);
+    filter: opacity(95%);
+}
+
+/* CONFIGURAÇÕES DO RODAPÉ */
+footer {
+    background-color: var(--cor1);
+    font-family: var(--font);
+    font-size: 1em;
+    color: var(--cor0);
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 2px 0px 5px var(--cor1);
+}
+
+footer > p > a {
+    color: var(--cor0);
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+.heart, .copy {
+    width: 0.75rem;
+}
